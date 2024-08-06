@@ -1,13 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import UIContextProvider from "./context/UI_context";
+import ApiCallsContextProvider from "./context/ApiCallsContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ApiCallsContextProvider>
+      <UIContextProvider>
+        <App />
+      </UIContextProvider>
+    </ApiCallsContextProvider>
   </React.StrictMode>
 );
 
