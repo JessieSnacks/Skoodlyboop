@@ -1,0 +1,31 @@
+.about .about_content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 0.5rem;
+}
+
+.about .image img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about .about_content .description {
+  background-color: #efe9e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.about .about_content h2 {
+  font-weight: Bold;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about .about_content {
+    display: block;
+  }
+}

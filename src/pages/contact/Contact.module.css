@@ -1,0 +1,22 @@
+.container_sm {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0rem 2rem;
+}
+.contact h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 20px;
+}
+label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact textarea {
+  width: 100%;
+  font: inherit;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  height: 200px;
+}

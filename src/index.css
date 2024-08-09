@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 2.5rem;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+li:hover {
+  background: #fcf5e9;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  line-height: 1.2em;
+  text-align: center;
+}
+section {
+  margin-top: 100px;
+}
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-3 {
+  padding: 3rem;
+}

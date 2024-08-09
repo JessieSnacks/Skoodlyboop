@@ -1,0 +1,26 @@
+.bottom_content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.bottom_content .description {
+  background-color: #efe9e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(37, 45, 52, 0.8);
+}
+
+.bottom_content .image img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bottom_content {
+    display: block;
+  }
+}
