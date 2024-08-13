@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Showcase from "./Showcase";
-import data from "../../data/content.json";
+import { ApiContext } from "../../context/ApiCallsContext";
 const Home = () => {
+  const {
+    items: { content },
+  } = useContext(ApiContext);
   return (
     <>
-      <Showcase title={data.Title} />
+      <Showcase title={content.Title} />
     </>
   );
 };
