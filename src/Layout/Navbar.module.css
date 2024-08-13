@@ -89,6 +89,9 @@ li {
     display: block;
     padding: 10px;
   }
+  .navbar li a {
+    color: #fff;
+  }
   body {
     margin: auto;
     text-align: center;
