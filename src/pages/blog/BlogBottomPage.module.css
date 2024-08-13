@@ -11,7 +11,11 @@
   align-items: center;
   color: rgba(37, 45, 52, 0.8);
 }
-
+.bottom_content .description .btn {
+  margin: auto;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .bottom_content .image img {
   display: block;
   object-fit: cover;

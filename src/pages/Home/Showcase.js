@@ -17,7 +17,6 @@ const Showcase = ({ title }) => {
     single_image,
   } = classes;
   const { handleOpen } = useContext(UIContext);
-  // console.log("title :>> ", title);
   return (
     <section className={showcase}>
       <div className={images}>

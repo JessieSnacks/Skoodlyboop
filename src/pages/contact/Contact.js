@@ -40,7 +40,9 @@ const Contact = () => {
         return;
       }
       const result = await sendEmail;
-
+      if (result.ok) {
+        alert("Email received, We will be in touch in the next couple of days");
+      }
       nameRef.current.value = "";
       emailRef.current.value = "";
       messageRef.current.value = "";
