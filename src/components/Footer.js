@@ -47,7 +47,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <p>Copyright &copy; 2024, nameof website, All Rights Reserved</p>
+      <p>Copyright &copy;2024, nameofwebsite, All Rights Reserved</p>
     </section>
   );
 };

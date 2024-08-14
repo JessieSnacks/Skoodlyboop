@@ -13,7 +13,6 @@ const ListArticles = () => {
   const { list_items_content, list_items, item, blog_post, info } = classes;
 
   const { items, isLoading, error } = useContext(ApiContext);
-  console.log("items :>> ", items);
   return (
     <Container>
       <hr />
@@ -33,7 +32,13 @@ const ListArticles = () => {
                   <div className={item}>
                     <img src={showcase1} alt="" />
                     <div className={info}>
-                      <time>{itemList.date}</time>
+                      <time>
+                        {new Date(itemList.date).toLocaleDateString("en-US", {
+                          month: "long",
+                          day: "numeric",
+                          year: "numeric",
+                        })}
+                      </time>
                       <h3>{itemList.titles}</h3>
                       <p>{itemList.summary}</p>
                     </div>

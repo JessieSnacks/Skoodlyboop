@@ -11,7 +11,6 @@ const BlogBottomPage = () => {
   const {
     items: { content },
   } = useContext(ApiContext);
-  console.log("content :>> ", content);
   return (
     <div>
       <Container>
