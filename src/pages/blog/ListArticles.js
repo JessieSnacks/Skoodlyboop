@@ -5,9 +5,6 @@ import classes from "./ListArticles.module.css";
 import { ApiContext } from "../../context/ApiCallsContext";
 
 import showcase1 from "../../assets/bread_loaf.jpeg";
-// import showcase2 from "../../assets/bakers.jpg";
-// import showcase3 from "../../assets/cooking_kitchen.jpg";
-// import showcase4 from "../../assets/strawberry_cake.jpg";
 
 const ListArticles = () => {
   const { list_items_content, list_items, item, blog_post, info } = classes;

@@ -2,12 +2,14 @@ import React, { useContext } from "react";
 import Showcase from "./Showcase";
 import { ApiContext } from "../../context/ApiCallsContext";
 const Home = () => {
-  const {
-    items: { content },
-  } = useContext(ApiContext);
+  const { items, isLoading } = useContext(ApiContext);
+
   return (
     <>
-      <Showcase title={content.Title} />
+      {isLoading && <p>is Loading...</p>}
+      {!isLoading && items && items.content && (
+        <Showcase title={items.content.Title} />
+      )}
     </>
   );
 };
