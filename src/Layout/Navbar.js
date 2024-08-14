@@ -31,22 +31,21 @@ const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/events">Events</NavLink>
+                <NavLink to="/blog">The Nosh</NavLink>
               </li>
+              {/* <li>
+                <NavLink to="/events">Events</NavLink>
+              </li> */}
 
               <li>
                 <NavLink to="/about">About</NavLink>
               </li>
 
+              {/* <li>
+                <NavLink to="/consulting">Consulting</NavLink>
+              </li> */}
               <li>
                 <NavLink to="/contact">Contact</NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/blog">The Nosh</NavLink>
-              </li>
-              <li>
-                <NavLink to="/consulting">Consulting</NavLink>
               </li>
             </ul>
           </div>
@@ -62,6 +61,11 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to="/blog" onClick={toggleMenu}>
+                    The Nosh
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to="/events" onClick={toggleMenu}>
                     Events
                   </NavLink>
@@ -73,17 +77,6 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <NavLink to="/contact" onClick={toggleMenu}>
-                    Contact
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink to="/blog" onClick={toggleMenu}>
-                    The Nosh
-                  </NavLink>
-                </li>
-                <li>
                   <NavLink to="/consulting" onClick={toggleMenu}>
                     Consulting
                   </NavLink>
@@ -91,6 +84,11 @@ const Navbar = () => {
                 <li>
                   <NavLink to="#" onClick={handleOpen}>
                     Subscribe
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact" onClick={toggleMenu}>
+                    Contact
                   </NavLink>
                 </li>
               </ul>
