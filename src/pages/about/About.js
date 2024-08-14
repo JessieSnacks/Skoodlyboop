@@ -4,17 +4,12 @@ import classes from "./About.module.css";
 import { ApiContext } from "../../context/ApiCallsContext";
 
 const About = () => {
-  const { image, about, about_content, description } = classes;
+  const { image, about, about_content, description, abtme } = classes;
   const {
     items: { content },
   } = useContext(ApiContext);
 
   const title = content.aboutme_title;
-  const aboutMeContent = content.aboutme_content.split(".").map((a, i) => (
-    <p key={i} className="p1">
-      {a}.
-    </p>
-  ));
 
   return (
     <section className={about}>
@@ -23,8 +18,10 @@ const About = () => {
           <img src={jessie} alt="Jessie" />
         </div>
         <div className={`${description} p-3`}>
-          <h2 className="py-3">{title}</h2>
-          {aboutMeContent}
+          <div className={abtme}>
+            <h2 className="py-3">{title}</h2>
+            <p>{content.aboutme_content}</p>
+          </div>
         </div>
       </div>
     </section>

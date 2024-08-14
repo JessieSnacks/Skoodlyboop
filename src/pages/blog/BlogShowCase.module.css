@@ -1,21 +1,18 @@
 .blog_showcase {
   background-color: rgb(249, 249, 249);
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .blog_showcase .category {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   text-align: center;
   padding: 25px;
 }
 
-.category .food_category .name {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.category .food_category {
+  height: 400px;
 }
 .category .food_category img {
   width: 100%;

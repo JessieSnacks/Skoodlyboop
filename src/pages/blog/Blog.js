@@ -6,7 +6,7 @@ import BlogBottomPage from "./BlogBottomPage";
 const Blog = () => {
   return (
     <section>
-      <h2>Welcome to My Blog</h2>
+      <h2 className="py-2">Welcome to The Nosh</h2>
       <BlogShowCase />
       <ListArticles />
       <BlogBottomPage />

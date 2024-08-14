@@ -43,7 +43,7 @@ const Navbar = () => {
               </li>
 
               <li>
-                <NavLink to="/blog">Blog</NavLink>
+                <NavLink to="/blog">The Nosh</NavLink>
               </li>
               <li>
                 <NavLink to="/consulting">Consulting</NavLink>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
                 <li>
                   <NavLink to="/blog" onClick={toggleMenu}>
-                    Blog
+                    The Nosh
                   </NavLink>
                 </li>
                 <li>
@@ -96,7 +96,7 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <Button onClick={handleOpen}>Subscribe</Button>
+          <Button onClick={handleOpen}> Stay in the loop</Button>
         </div>
       </nav>
     </>
