@@ -3,8 +3,9 @@ import { useParams } from "react-router-dom";
 import { ApiContext } from "../../context/ApiCallsContext";
 import { filterBlogPost } from "../../utilities/utilityFunction";
 import Container from "../../UI/Container";
-
+import classes from "./BlogDetailPage.module.css";
 const BlogDetailPage = () => {
+  const { article_content, sentence } = classes;
   const params = useParams();
   const id = params.id;
   const { items } = useContext(ApiContext);
@@ -13,20 +14,17 @@ const BlogDetailPage = () => {
     content = <p>...Fetching post</p>;
   } else {
     const item = filterBlogPost(items.data, id);
-    console.log("item :>> ", item);
     const blogContentDescription = item[0].aricles.split(".").map((a, i) => (
-      <p key={i} className="py-1">
+      <p key={i} className={sentence}>
         {a}.
       </p>
     ));
-    console.log("blogContentDescription :>> ", blogContentDescription);
     content = (
       <Container>
         <h1>{item[0].titles}</h1>
-        <p>{item[0].summary}</p>
-        <div className="content">
-          <article>{blogContentDescription}</article>
-        </div>
+        <article className={`${article_content} py-3`}>
+          {blogContentDescription}
+        </article>
       </Container>
     );
   }

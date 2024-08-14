@@ -24,11 +24,15 @@ hr {
   display: block;
   object-fit: cover;
 }
+.list_items_content .blog_post .item a {
+  text-decoration: underline;
+}
 @media (max-width: 768px) {
   .list_items_content .blog_post .item {
     display: flex;
     flex-direction: column;
     padding: 0px 0px;
+    align-items: center;
   }
   .list_items_content .blog_post .item img {
     height: auto;
