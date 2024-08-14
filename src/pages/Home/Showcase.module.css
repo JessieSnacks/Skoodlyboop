@@ -17,7 +17,12 @@
   padding: 40px 0px;
 }
 .showcase .summary_content {
-  padding: 10px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 10px 100px;
 }
 
 .showcase .images img {
@@ -34,6 +39,18 @@
   height: 50vh;
 }
 
+.contact {
+  font: inherit;
+  background-color: #ac86dd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
 @media (max-width: 768px) {
   .showcase .images {
     display: block;

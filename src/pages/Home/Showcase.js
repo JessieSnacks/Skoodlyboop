@@ -1,11 +1,9 @@
-import React, { useContext } from "react";
-import { UIContext } from "../../context/UI_context";
+import { Link } from "react-router-dom";
 import showcase1 from "../../assets/bread_loaf.jpeg";
 import showcase2 from "../../assets/homePageDessert.JPG";
 import showcase3 from "../../assets/cooking_kitchen.jpg";
 import showcase4 from "../../assets/strawberry_cake.jpg";
 import classes from "./Showcase.module.css";
-import Button from "../../UI/Button";
 
 const Showcase = ({ title }) => {
   const {
@@ -15,8 +13,8 @@ const Showcase = ({ title }) => {
     summary_content,
     panoramic_picture,
     single_image,
+    contact,
   } = classes;
-  const { handleOpen } = useContext(UIContext);
   return (
     <section className={showcase}>
       <div className={images}>
@@ -34,17 +32,17 @@ const Showcase = ({ title }) => {
         <div className={summary_content}>
           <h3>{title}</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-            quo tempora suscipit labore neque ipsum obcaecati quidem ex, optio
-            in doloremque veniam nemo numquam illum ut, eum voluptate assumenda,
-            dolores sed minus impedit. Quo voluptates error at commodi qui
-            dolorem eligendi, laudantium nesciunt libero reprehenderit ut ipsam
-            magni atque veritatis, labore, illo ipsum tempore ducimus. Aut
-            veniam a hic odit praesentium enim sunt, nam quod dicta natus
-            placeat asperiores cupiditate.
+            I host cooking classes, food events, and cater dinners. Beyond the
+            plate, I work to break down barriers to food access. I have a
+            master's degree in public health and city planning, and consult with
+            city and state agencies, nonprofits, and developers. I champion
+            equitable food policies, work with restaurants, farmers and schools,
+            conduct community focused needs assessments, and design evaluations.
           </p>
+          <Link to="/contact" className={contact}>
+            Work with Me
+          </Link>
         </div>
-        <Button onClick={handleOpen}>subscribe to newsletter</Button>
       </div>
       <div className={panoramic_picture}>
         <img src={showcase4} alt="strawberry_cake" />
