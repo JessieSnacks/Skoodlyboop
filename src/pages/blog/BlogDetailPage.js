@@ -14,7 +14,7 @@ const BlogDetailPage = () => {
     content = <p>...Fetching post</p>;
   } else {
     const item = filterBlogPost(items.data, id);
-    const blogContentDescription = item[0].aricles.split(".").map((a, i) => (
+    const blogContentDescription = item[0].articles.split(".").map((a, i) => (
       <p key={i} className={sentence}>
         {a}.
       </p>
