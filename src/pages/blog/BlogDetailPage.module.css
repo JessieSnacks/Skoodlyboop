@@ -1,6 +1,9 @@
 .article_content {
   text-align: left;
+  margin: 0px 30px;
 }
 .sentence {
   margin: 1rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
 }
