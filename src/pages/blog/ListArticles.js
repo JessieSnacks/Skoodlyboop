@@ -10,7 +10,6 @@ const ListArticles = () => {
   const { list_items_content, list_items, item, blog_post, info } = classes;
 
   const { items, isLoading, error } = useContext(ApiContext);
-  console.log("items :>> ", items);
   return (
     <Container>
       <hr />

@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ApiContext } from "../../context/ApiCallsContext";
 import { filterBlogPost } from "../../utilities/utilityFunction";
-import Container from "../../UI/Container";
 import classes from "./BlogDetailPage.module.css";
 const BlogDetailPage = () => {
   const { article_content, sentence } = classes;
@@ -21,12 +20,12 @@ const BlogDetailPage = () => {
     ));
 
     content = (
-      <Container>
+      <>
         <h1>{item[0].titles}</h1>
         <article className={`${article_content} py-3`}>
           {blogContentDescription}
         </article>
-      </Container>
+      </>
     );
   }
   return <section className="py-3">{content}</section>;
