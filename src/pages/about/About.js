@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import jessie from "../../assets/Aboutme.jpeg";
+import jessie from "../../assets/about_me.png";
 import classes from "./About.module.css";
 import { ApiContext } from "../../context/ApiCallsContext";
 
