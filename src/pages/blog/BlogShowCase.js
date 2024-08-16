@@ -1,9 +1,9 @@
 import React from "react";
 import Container from "../../UI/Container";
-import salads from "../../assets/salads.JPG";
-import vegetarian from "../../assets/WelcometotheNosh_BrighterPhoto.jpeg";
-import mostPopular from "../../assets/differentDessertPlate.jpg";
-import desserts from "../../assets/homePageDessert.JPG";
+import salads from "../../assets/saladsTable.JPG";
+import vegetarian from "../../assets/WelcometotheNoshBrighter.jpeg";
+import mostPopular from "../../assets/eventPage_desserts.jpg";
+import desserts from "../../assets/kid_dessert_min.JPG";
 import classes from "./BlogShowCase.module.css";
 const BlogShowCase = () => {
   const { blog_showcase, category, food_category } = classes;

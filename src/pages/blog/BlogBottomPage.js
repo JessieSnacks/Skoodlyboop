@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Container from "../../UI/Container";
-import bottomPageImage from "../../assets/bakers.jpg";
+import bottomPageImage from "../../assets/jessie_partner.jpg";
 import { ApiContext } from "../../context/ApiCallsContext";
 import { UIContext } from "../../context/UI_context";
 

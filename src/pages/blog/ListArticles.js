@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import classes from "./ListArticles.module.css";
 import { ApiContext } from "../../context/ApiCallsContext";
 
-import showcase1 from "../../assets/bread_loaf.jpeg";
+import breadLoaf from "../../assets/bread_loaf.jpeg";
 
 const ListArticles = () => {
   const { list_items_content, list_items, item, blog_post, info } = classes;
@@ -27,7 +27,7 @@ const ListArticles = () => {
               return (
                 <div className={list_items} key={itemList.id}>
                   <div className={item}>
-                    <img src={showcase1} alt="" />
+                    <img src={breadLoaf} alt="" />
                     <div className={info}>
                       <time>
                         {new Date(itemList.date).toLocaleDateString("en-US", {

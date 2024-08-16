@@ -7,3 +7,7 @@
   line-height: 2.8rem;
   margin-bottom: 2rem;
 }
+.link_under {
+  text-decoration: underline;
+  color: blue;
+}
