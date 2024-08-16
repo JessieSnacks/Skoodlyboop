@@ -57,12 +57,6 @@ const Contact = () => {
     <section className={contact}>
       <h1>Let's Connect</h1>
       <div className={container_sm}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-          laborum est veritatis molestiae perspiciatis placeat libero voluptates
-          corrupti soluta veniam iusto doloribus asperiores cumque rem accusamus
-          quis, amet aspernatur voluptatem maiores dolore sequi nihil eum!
-        </p>
         <form onSubmit={submitEmailHandler}>
           <Input type="text" name="name" placeholder="Name" ref={nameRef} />
           <Input type="email" name="email" placeholder="Email" ref={emailRef} />

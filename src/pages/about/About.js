@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import jessie from "../../assets/Aboutme.jpeg";
 import classes from "./About.module.css";
 import { ApiContext } from "../../context/ApiCallsContext";
 
 const About = () => {
-  const { image, about, about_content, description, abtme } = classes;
+  const { image, about, about_content, description, abtme, contact, abt_btn } =
+    classes;
   const {
     items: { content },
   } = useContext(ApiContext);
@@ -21,6 +23,11 @@ const About = () => {
           <div className={abtme}>
             <h2 className="py-3">{title}</h2>
             <p>{content.aboutme_content}</p>
+          </div>
+          <div className={abt_btn}>
+            <Link to="/contact" className={contact}>
+              Work with Me
+            </Link>
           </div>
         </div>
       </div>
