@@ -29,7 +29,7 @@ const BlogDetailPage = () => {
       matchingLinks.forEach((link) => {
         const stringReplaced = link["key"];
         a = reactStringReplace(a, stringReplaced, (match, i) => (
-          <Link to={link["value"]} key={match + i}>
+          <Link to={link["value"]} key={match + i} target="_blank">
             <span className={link_under} key={stringReplaced + i}>
               {link["key"]}
             </span>
