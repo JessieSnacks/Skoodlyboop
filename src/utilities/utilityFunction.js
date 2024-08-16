@@ -7,10 +7,8 @@ export function filterBlogPost(items, id) {
 export function linksObject(linksArray) {
   const result = {};
   for (const link of linksArray) {
-    if (link) {
-      let [key, value] = link.split(/:(.*)/);
-      result[key] = value.trim();
-    }
+    let [key, value] = link.split(/:(.*)/);
+    result[key] = value;
   }
   return result;
 }
