@@ -25,7 +25,7 @@ const BlogDetailPage = () => {
 
     let replaceStr = articleToManipulate;
 
-    const blogContentDescription = replaceStr.split("\n").map((a, i) => {
+    content = replaceStr.split("\n").map((a, i) => {
       matchingLinks.forEach((link) => {
         const stringReplaced = link["key"];
         a = reactStringReplace(a, stringReplaced, (match, i) => (
@@ -46,9 +46,7 @@ const BlogDetailPage = () => {
     content = (
       <>
         <h1>{item[0].titles}</h1>
-        <article className={`${article_content} py-3`}>
-          {blogContentDescription}
-        </article>
+        <article className={`${article_content} py-3`}>{content}</article>
       </>
     );
   }
