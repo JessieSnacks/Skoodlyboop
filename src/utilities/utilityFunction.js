@@ -7,7 +7,11 @@ export function filterBlogPost(items, id) {
 export function linksObject(linksArray) {
   const result = {};
   for (const link of linksArray) {
+    if (!link) {
+      continue;
+    }
     let [key, value] = link.split(/:(.*)/);
+
     result[key] = value;
   }
   return result;
@@ -27,18 +31,3 @@ export function searchAlgo(text, patternObject) {
 
   return results;
 }
-
-// Example usage:
-// const blogPost = "This is a sample blog post. The post is about coding and algorithms. It also discusses data structures.";
-// const patternObject = {
-//     title: "sample blog post",
-//     content1: "coding and algorithms",
-//     content2: "data structures"
-// };
-
-// Expected output:
-// [
-//   { key: 'title', start: 10, end: 25 },
-//   { key: 'content1', start: 41, end: 61 },
-//   { key: 'content2', start: 80, end: 94 }
-// ]

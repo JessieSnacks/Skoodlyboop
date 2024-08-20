@@ -19,23 +19,22 @@ const BlogDetailPage = () => {
     content = <p>...Fetching post</p>;
   } else {
     const item = filterBlogPost(items.data, id);
-    const linksFormat = linksObject(item[0].links);
+    const linksFormat = linksObject(item[0].links.split("\n"));
     const matchingLinks = searchAlgo(item[0].articles, linksFormat);
     let articleToManipulate = item[0].articles.slice();
-
     let replaceStr = articleToManipulate;
-
     content = replaceStr.split("\n").map((a, i) => {
-      matchingLinks.forEach((link) => {
-        const stringReplaced = link["key"];
-        a = reactStringReplace(a, stringReplaced, (match, i) => (
-          <Link to={link["value"]} key={match + i} target="_blank">
-            <span className={link_under} key={stringReplaced + i}>
-              {link["key"]}
-            </span>
-          </Link>
-        ));
-      });
+      Object.keys(matchingLinks).length &&
+        matchingLinks.forEach((link) => {
+          const stringReplaced = link["key"];
+          a = reactStringReplace(a, stringReplaced, (match, i) => (
+            <Link to={link["value"]} key={match + i} target="_blank">
+              <span className={link_under} key={stringReplaced + i}>
+                {link["key"]}
+              </span>
+            </Link>
+          ));
+        });
 
       return (
         <p key={i} className={sentence}>
@@ -43,6 +42,7 @@ const BlogDetailPage = () => {
         </p>
       );
     });
+
     content = (
       <>
         <h1>{item[0].titles}</h1>

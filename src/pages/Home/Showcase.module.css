@@ -87,4 +87,13 @@
     height: 100%;
     width: 100%;
   }
+  .showcase .summary .summary_image {
+    display: none;
+  }
+  .showcase .summary .summary_content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }

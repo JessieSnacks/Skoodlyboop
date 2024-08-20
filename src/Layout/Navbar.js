@@ -65,22 +65,22 @@ const Navbar = () => {
                     The Nosh
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink to="/events" onClick={toggleMenu}>
                     Events
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink to="/about" onClick={toggleMenu}>
                     About
                   </NavLink>
                 </li>
 
-                <li>
+                {/* <li>
                   <NavLink to="/consulting" onClick={toggleMenu}>
                     Consulting
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink to="#" onClick={handleOpen}>
                     Subscribe
